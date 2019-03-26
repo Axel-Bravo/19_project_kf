@@ -1,4 +1,4 @@
-# Kaggle&Fun
+# Kaggle & Fun
 This is the wiki of the __Kaggle&Fun__ project, a project personally driven at my company in order to make profit my colleagues and friends and the _power and fun_ one can have while solving deep learning challenges. The basic approach is to provide a basic foundation of what deep learning is in order to be able to move as quick as possible into the practice of kaggle challenges, as practice makes mastery. 
 
 This git is used in order to agglutinate all material presented in class, tasks to realize as well as organize the code to be available to participants.
