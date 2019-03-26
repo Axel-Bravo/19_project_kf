@@ -4,7 +4,7 @@ This is the wiki of the __Kaggle&Fun__ project, a project personally driven at m
 This git is used in order to agglutinate all material presented in class, tasks to realize as well as organize the code to be available to participants.
 
 ## Current challenge:
-Kaggle __Plant Seedings Classification__ 
+Kaggle __Plant Seedings Classification__ [challenge](https://www.kaggle.com/c/plant-seedlings-classification/data)
 Can you differentiate a weed from a crop seedling?
 
 The ability to do so effectively can mean better crop yields and better stewardship of the environment.
