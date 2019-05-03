@@ -4,27 +4,18 @@ This is the wiki of the __Kaggle&Fun__ project, a project personally driven at m
 This git is used in order to agglutinate all material presented in class, tasks to realize as well as organize the code to be available to participants.
 
 ## Current challenge:
-Kaggle __Plant Seedings Classification__ [challenge](https://www.kaggle.com/c/plant-seedlings-classification/data)
-Can you differentiate a weed from a crop seedling?
+Kaggle __Histopathologic Cancer Detection__ [challenge](https://www.kaggle.com/c/histopathologic-cancer-detection)
 
-The ability to do so effectively can mean better crop yields and better stewardship of the environment.
+In this competition, you must create an algorithm to identify metastatic cancer in small image patches taken from larger digital pathology scans.
 
-The Aarhus University Signal Processing group, in collaboration with University of Southern Denmark, has recently released a dataset containing images of approximately 960 unique plants belonging to 12 species at several growth stages.
+```
+[PCam] packs the clinically-relevant task of metastasis detection into a straight-forward binary image classification task, akin to CIFAR-10 and MNIST. Models can easily be trained on a single GPU in a couple hours, and achieve competitive scores in the Camelyon16 tasks of tumor detection and whole-slide image diagnosis. Furthermore, the balance between task-difficulty and tractability makes it a prime suspect for fundamental machine learning research on topics as active learning, model uncertainty, and explainability. 
+```
 
-[image]: images/seedings.png
-![plant_seedings][image]
+[image]: images/histopathologic.png
+![histopatologic][image]
 
 ### Data Description
-You are provided with a training set and a test set of images of plant seedlings at various stages of grown. Each image has a filename that is its unique id. The dataset comprises 12 plant species. The goal of the competition is to create a classifier capable of determining a plant's species from a photo. The list of species is as follows:
-- Black-grass
-- Charlock
-- Cleavers
-- Common Chickweed
-- Common wheat
-- Fat Hen
-- Loose Silky-bent
-- Maize
-- Scentless Mayweed
-- Shepherds Purse
-- Small-flowered Cranesbill
-- Sugar beet
+In this dataset, you are provided with a large number of small pathology images to classify. Files are named with an image `id`. The `train_labels.csv` file provides the ground truth for the images in the `train` folder. You are predicting the labels for the images in the `test` folder. A positive label indicates that the center 32x32px region of a patch contains at least one pixel of tumor tissue. Tumor tissue in the outer region of the patch does not influence the label. This outer region is provided to enable fully-convolutional models that do not use zero-padding, to ensure consistent behavior when applied to a whole-slide image.
+
+The original PCam dataset contains duplicate images due to its probabilistic sampling, however, the version presented on Kaggle does not contain duplicates. We have otherwise maintained the same data and splits as the PCam benchmark. 
